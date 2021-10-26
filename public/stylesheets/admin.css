@@ -1,0 +1,69 @@
+body {
+  background-color: #52616b;
+}
+
+.login-form {
+  margin: 10%;
+  padding: 5%;
+  border: 4px solid black;
+  background-color: #c9d6df;
+}
+
+.form-check-label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.form-label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+#button {
+  background-color: #52616b;
+  color: #f0f5f9;
+  border: 2px solid black;
+}
+
+#errormsg {
+  color: black;
+  font-weight: 700;
+}
+
+#signout {
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#novedades-header {
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+#table {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.agregar-form {
+  padding: 5%;
+  border: 4px solid black;
+  background-color: #c9d6df;
+  margin-top: 7%;
+  margin-bottom: 30%;
+}
+
+.agregar-h4 {
+  margin-top: 10%;
+  font-size: 2em;
+}
+
+#cuerpo {
+  height: 15em;
+}
+
+.message-error {
+  color: red;
+}

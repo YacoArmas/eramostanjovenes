@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eramos Tan Jovenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dela+Gothic+One&family=Fredoka+One&family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Playfair+Display:wght@400;500&family=Poppins&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/home-stylesheets.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="container-fluid">
+      <h1>Eramos tan jovenes</h1>
+      <img src="images/white wine glass.png" alt="wine glass" />
+      <p>productora audiovisual</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+      <a href="/" class="{{#if isHome}}active{{/if}}">Home</a>
+
+      <a href="/historia" class="{{#if isHistoria}}active{{/if}}">Historia</a>
+
+      <a href="/producciones" class="{{#if isProducciones}}active{{/if}}">Producciones</a>
+
+      <a href="/galeria" class="{{#if isGaleria}}active{{/if}}">Galeria</a>
+
+      <a href="/novedades" class="{{#if isNovedades}}active{{/if}}">Novedades</a>
+
+      <a href="/contacto" class="{{#if isContacto}}active{{/if}}">Contacto</a>
+    </nav>
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <h3>Eramos tan jovenes <span>&copy;</span></h3>
+      <a href="https://www.instagram.com/" target="blank"><img
+          id="instagram-logo"
+          src="images/instagram.png"
+          alt="instagram"
+        /></a>
+      <a href="https://www.youtube.com/" target="blank"><img
+          id="youtube-logo"
+          src="images/youtube.png"
+          alt="youtube"
+        /></a>
+      <a href="https://www.facebook.com/" target="blank"><img
+          id="facebook-logo"
+          src="images/facebook.png"
+          alt="facebook"
+        /></a>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

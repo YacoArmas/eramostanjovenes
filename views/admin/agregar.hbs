@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h4 class="agregar-h4">Agregar Entrada</h4>
+      <form
+        action="/admin/novedades/agregar"
+        method="post"
+        class="agregar-form"
+      >
+        <div class="mb-3 row">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Titulo"
+            aria-label="default input example"
+            name="titulo"
+          />
+        </div>
+        <div class="mb-3 row">
+          <input
+            class="form-control form-control-sm"
+            type="text"
+            placeholder="Subtitulo"
+            aria-label=".form-control-sm example"
+            name="subtitulo"
+          />
+        </div>
+        <div class="mb-3 row">
+          <input
+            id="cuerpo"
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="Cuerpo"
+            aria-label=".form-control-lg example"
+            name="cuerpo"
+          />
+        </div>
+        {{#if error}}
+          <p class="message-error">{{message}}</p>
+        {{/if}}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+
+    </div>
+  </div>
+</div>

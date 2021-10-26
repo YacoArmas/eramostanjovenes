@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eramos Tan Jovenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dela+Gothic+One&family=Fredoka+One&family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Playfair+Display:wght@400;500&family=Poppins&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/contacto-stylesheets.css" />
+  </head>
+
+<!-- MAIN -->
+<main class="conteiner">
+  <div class="left">
+    <h3>Contacto rapido</h3>
+    <form action="/contacto" method="POST">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Tu nombre"
+        name="nombre"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="tu-email@ejemplo.com"
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+      <input
+        type="number"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="11-8888-9999"
+        name="tel"
+      />
+    </div>
+    <div class="mb-3">
+      <label
+        for="exampleFormControlTextarea1"
+        class="form-label"
+      >Mensaje</label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        placeholder="Tu mensaje"
+        name="mensaje"
+      ></textarea>
+      <input class="enviar-button" type="submit" value="Enviar" />
+    </div>
+    </form>
+    {{message}}
+  </div>
+  <div class="right">
+    <h3>Otras vias de comunicacion</h3>
+    <p>Tambien podes contactarnos por:</p>
+    <ul>
+      <li>Telefono: 11-0721-1473</li>
+      <li>
+        Email:
+        <a href="mailto: EramosTanJovenes@gmail.com">ETJproducciones@gmail.com
+        </a>
+      </li>
+      <li>
+        Instagram:
+        <a href="https://www.instagram.com/">ETJproducciones</a>
+      </li>
+      <li>Twitter: <a href="https://twitter.com">@ETJproducciones</a></li>
+      <li>Youtube: <a href="https://youtube.com">ETJproducciones</a></li>
+    </ul>
+    <p>Nuestras oficinas se encuentran en el pasaje La Nave 314.</p>
+  </div>
+</main>

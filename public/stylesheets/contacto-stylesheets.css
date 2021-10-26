@@ -1,0 +1,1127 @@
+/*  font-family: 'Open Sans', sans-serif;               Normal sans
+    font-family: 'Amatic SC', cursive;                  Skinny handwritten 
+    font-family: 'Dela Gothic One', cursive;            Bold comic style
+    font-family: 'Fredoka One', cursive;                Bold comicsans style
+    font-family: 'Noto Serif', serif;                   Skinny classic 
+    font-family: 'Playfair Display', serif;             Even skinnier classic
+    font-family: 'Poppins', sans-serif;                 Line based font
+    font-family: 'Source Serif Pro', serif;             Middle skinny tnr
+*/
+/* https://colorhunt.co/palette/f0f5f9c9d6df52616b1e2022 
+#F0F5F9 white
+#C9D6DF light gray
+#52616B gray
+#1E2022 black */
+
+/* 1280 x 720 */
+
+/* GLOBALS */
+
+html {
+  box-sizing: border-box;
+  line-height: 1.3px;
+}
+
+body {
+  margin-top: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: #1e2022;
+  height: 100px;
+  padding: 3px;
+}
+
+header h1 {
+  font-family: "Noto Serif", serif;
+}
+
+header p {
+  padding-left: 3%;
+  font-family: "Poppins", sans-serif;
+}
+
+header img {
+  position: absolute;
+  width: 26px;
+  top: 60px;
+  left: 57%;
+}
+
+header h1,
+p {
+  padding-top: 10px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 2560px) {
+  header {
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header p {
+    font-size: 25px;
+    padding-right: 3%;
+  }
+
+  header img {
+    position: absolute;
+    width: 48px;
+    top: 85px;
+    left: 57%;
+  }
+}
+
+@media (max-width: 1920px) {
+  header {
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 17px;
+    padding-left: 0%;
+  }
+
+  header img {
+    position: absolute;
+    width: 29px;
+    top: 59px;
+    left: 55%;
+  }
+}
+
+@media (max-width: 1440px) {
+  header {
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 17px;
+    padding-left: 0%;
+  }
+
+  header img {
+    position: absolute;
+    width: 29px;
+    top: 59px;
+    left: 57%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 15px;
+    padding-left: 0%;
+  }
+
+  header img {
+    position: absolute;
+    width: 26px;
+    top: 55px;
+    left: 59%;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 15px;
+    padding-left: 0%;
+  }
+
+  header img {
+    position: absolute;
+    width: 26px;
+    top: 55px;
+    left: 62%;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    height: 80px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  header p {
+    font-size: 10px;
+    padding-left: 1%;
+  }
+
+  header img {
+    position: absolute;
+    width: 20px;
+    top: 49px;
+    left: 67%;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  header p {
+    font-size: 10px;
+    padding-left: 1%;
+  }
+
+  header img {
+    position: absolute;
+    width: 20px;
+    top: 49px;
+    left: 68%;
+  }
+}
+
+@media (max-width: 320px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  header p {
+    font-size: 10px;
+    padding-left: 1%;
+  }
+
+  header img {
+    position: absolute;
+    width: 20px;
+    top: 49px;
+    left: 70%;
+  }
+}
+
+/* NAV BAR */
+
+nav {
+  background-color: #c9d6df;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav a {
+  width: 16%;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  background-color: #52616b;
+  color: white;
+}
+
+.active:hover {
+  transition: color 1s;
+  transition: background-color 1s;
+  background-color: #c9d6df;
+  color: black;
+}
+
+nav a:hover {
+  transition: color 1s;
+  transition: background-color 1s;
+  background-color: #52616b;
+  color: white;
+}
+
+@media (max-width: 2560px) {
+  nav {
+    height: 40px;
+  }
+
+  nav a {
+    font-size: 25px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 2000px) {
+  nav {
+    height: 30px;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 20px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  nav a {
+    font-size: 11px;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  nav a {
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
+/* MAIN */
+main {
+  background-color: #52616b;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+main .left {
+  border: solid 3px #1e2022;
+  width: 80%;
+  background-color: #c9d6df;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 5%;
+  font-family: "Noto Serif", serif;
+}
+
+main .left h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+main .right {
+  border: solid 3px #1e2022;
+  width: 60%;
+  background-color: #c9d6df;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  padding: 10%;
+  padding-left: 11%;
+  font-family: "Noto Serif", serif;
+}
+
+main .right h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+main .right ul {
+  color: black;
+  text-align: left;
+}
+
+main .right p {
+  color: black;
+  text-align: left;
+}
+
+.enviar-button {
+  width: 160px;
+  height: 40px;
+  margin: 8%;
+  margin-bottom: 0;
+  margin-left: 35%;
+  color: #f0f5f9;
+  background-color: #1e2022;
+  border-radius: 7px;
+}
+
+.enviar-button:hover {
+  transition: border 0.5s;
+  border: 2px solid rgba(255, 255, 0, 0.8);
+}
+
+.enviar-button:active {
+  border: 5px solid white;
+}
+
+@media (min-height: 1440px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  main .left {
+    font-size: 30px;
+    border: solid 3px #1e2022;
+    width: 1100px;
+    height: 1100px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 50px;
+  }
+
+  .form-control {
+    height: 70px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 30px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 240px;
+    font-size: 30px;
+  }
+
+  ::placeholder {
+    font-size: 30px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 900px;
+    height: 900px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 10%;
+    padding-top: 15%;
+    font-size: 30px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+  }
+
+  .enviar-button {
+    width: 240px;
+    height: 60px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 35%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 7px;
+  }
+}
+
+@media (max-height: 1080px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  main .left {
+    font-size: 25px;
+    border: solid 3px #1e2022;
+    width: 900px;
+    height: 900px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 40px;
+  }
+
+  .form-control {
+    height: 50px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 25px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 240px;
+    font-size: 25px;
+  }
+
+  ::placeholder {
+    font-size: 25px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 700px;
+    height: 700px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 10%;
+    padding-top: 15%;
+    font-size: 25px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+  }
+
+  .enviar-button {
+    width: 240px;
+    height: 60px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 35%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 7px;
+  }
+}
+
+@media (max-height: 810px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  main .left {
+    font-size: 25px;
+    border: solid 3px #1e2022;
+    width: 700px;
+    height: 750px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 30px;
+  }
+
+  .form-control {
+    height: 40px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 20px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 180px;
+    font-size: 20px;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 500px;
+    height: 550px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 10%;
+    padding-top: 13%;
+    font-size: 20px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+
+  .enviar-button {
+    width: 180px;
+    height: 40px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 35%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 7px;
+  }
+}
+
+@media (max-height: 576px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  main .left {
+    font-size: 20px;
+    border: solid 3px #1e2022;
+    width: 500px;
+    height: 650px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 25px;
+  }
+
+  .form-control {
+    height: 30px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 20px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 180px;
+    font-size: 20px;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 400px;
+    height: 450px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    padding: 10%;
+    padding-top: 13%;
+    font-size: 15px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+  }
+
+  .enviar-button {
+    width: 180px;
+    height: 40px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 28%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  main .left {
+    font-size: 20px;
+    border: solid 3px #1e2022;
+    width: 600px;
+    height: 680px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 11%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 25px;
+  }
+
+  .form-control {
+    height: 30px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 20px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 180px;
+    font-size: 20px;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 600px;
+    height: 550px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 11%;
+    padding: 10%;
+    padding-top: 13%;
+    font-size: 20px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+
+  .enviar-button {
+    width: 180px;
+    height: 40px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 28%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  main .left {
+    font-size: 15px;
+    border: solid 3px #1e2022;
+    width: 300px;
+    height: 480px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 11%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    height: 20px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 15px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 120px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 300px;
+    height: 400px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 11%;
+    padding: 10%;
+    padding-top: 13%;
+    font-size: 13px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+
+  .enviar-button {
+    width: 120px;
+    height: 20px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 28%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    background-color: #52616b;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  main .left {
+    font-size: 15px;
+    border: solid 3px #1e2022;
+    width: 280px;
+    height: 480px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    padding: 5%;
+  }
+
+  main .left h3 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    height: 20px;
+  }
+
+  .form-control[type="text"],
+  [type="email"],
+  [type="number"] {
+    font-size: 15px;
+  }
+
+  main div #exampleFormControlTextarea1 {
+    height: 120px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  main .right {
+    border: solid 3px #1e2022;
+    width: 280px;
+    height: 350px;
+    background-color: #c9d6df;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    padding: 10%;
+    padding-top: 13%;
+    font-size: 13px;
+  }
+
+  main .right h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+
+  .enviar-button {
+    width: 120px;
+    height: 20px;
+    margin: 8%;
+    margin-bottom: 0;
+    margin-left: 28%;
+    color: #f0f5f9;
+    background-color: #1e2022;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1e2022;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer h3 {
+  font-family: "Noto Serif", serif;
+  color: white;
+  margin-right: 60%;
+  font-size: 20px;
+}
+
+footer span {
+  font-size: 13px;
+}
+
+#instagram-logo {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+}
+
+#youtube-logo {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+  margin-bottom: 14px;
+}
+
+#facebook-logo {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-height: 1440px) {
+  footer h3 {
+    margin-right: 84%;
+  }
+}
+
+@media (max-height: 1080px) {
+  footer {
+    height: 80px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+    margin-right: 81%;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+
+  #instagram-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+
+  #youtube-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+
+  #facebook-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-height: 810px) {
+  footer {
+    height: 50px;
+  }
+
+  footer h3 {
+    font-size: 15px;
+    margin-right: 78%;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+
+  #instagram-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+
+  #youtube-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 14px;
+  }
+
+  #facebook-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-height: 576px) {
+  footer {
+    height: 60px;
+  }
+
+  footer h3 {
+    font-size: 23px;
+    margin-right: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 50px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+    margin-right: 51%;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+
+  #instagram-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+
+  #youtube-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 14px;
+  }
+
+  #facebook-logo {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media (max-width: 425px) {
+  footer {
+    height: 50px;
+  }
+
+  footer h3 {
+    font-size: 15px;
+    margin-right: 27%;
+  }
+
+  footer span {
+    font-size: 10px;
+  }
+
+  #instagram-logo {
+    width: 20px;
+    height: auto;
+    margin: 10px;
+  }
+
+  #youtube-logo {
+    width: 20px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 13px;
+  }
+
+  #facebook-logo {
+    width: 20px;
+    height: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    height: 40px;
+  }
+
+  footer h3 {
+    font-size: 15px;
+    margin-right: 12%;
+  }
+
+  footer span {
+    font-size: 7px;
+  }
+
+  #instagram-logo {
+    width: 15px;
+    height: auto;
+    margin: 10px;
+  }
+
+  #youtube-logo {
+    width: 15px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 12px;
+  }
+
+  #facebook-logo {
+    width: 15px;
+    height: auto;
+    margin: 10px;
+  }
+}

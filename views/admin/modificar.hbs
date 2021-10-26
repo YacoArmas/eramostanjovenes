@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h4 class="agregar-h4">Modificar Novedad</h4>
+      <form
+        action="/admin/novedades/modificar"
+        method="post"
+        class="agregar-form"
+      >
+        <input type="hidden" value="{{novedad.id}}" name="id" />
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Titulo"
+            aria-label="default input example"
+            name="titulo"
+            value="{{novedad.titulo}}"
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control form-control-sm"
+            type="text"
+            placeholder="Subtitulo"
+            name="subtitulo"
+          >{{novedad.subtitulo}}</textarea>
+        </div>
+        <div class="mb-3">
+          <textarea
+            id="cuerpo"
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="Cuerpo"
+            name="cuerpo"
+          >{{novedad.cuerpo}}</textarea>
+        </div>
+        {{#if error}}
+          <p class="message-error">{{message}}</p>
+        {{/if}}
+        <button type="submit" class="btn btn-primary">Modificar</button>
+      </form>
+
+    </div>
+  </div>
+</div>
