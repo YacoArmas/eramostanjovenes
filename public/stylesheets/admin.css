@@ -67,3 +67,8 @@ body {
 .message-error {
   color: red;
 }
+
+#error-search {
+  color: #f0f5f9;
+  margin: 2%;
+}
